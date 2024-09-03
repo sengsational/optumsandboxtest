@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "72971f26-8e78-4d76-a71f-3ba16534b82b",
+		"name": "Clean Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37888693",
+		"_collection_link": "https://optum-testers.postman.co/workspace/Optum-Testers-Workspace~463b76ef-7daf-4b5a-b93a-a58ba9b70de2/collection/37888693-72971f26-8e78-4d76-a71f-3ba16534b82b?action=share&source=collection_link&creator=37888693"
+	},
+	"item": [
+		{
+			"name": "TestAuthHttpBin",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"authUrl": "https://www.httpbin.org/get",
+						"client_authentication": "header",
+						"clientId": "55796a71-8104-4625-b259-bb91e9f13a60",
+						"state": "0124",
+						"code_verifier": "6b890b254542c9de4603278153e1b127d21730d46ac2620e6e35514c",
+						"scope": "patient/Patient.read",
+						"redirect_uri": "https://sites.google.com/sengsational.com/privacy/privacypolicy",
+						"tokenName": "BasicTest",
+						"clientSecret": "",
+						"accessTokenUrl": "",
+						"tokenRequestParams": [],
+						"authRequestParams": [],
+						"addTokenTo": "header",
+						"tokenType": "",
+						"challengeAlgorithm": "S256",
+						"grant_type": "authorization_code_with_pkce",
+						"useBrowser": false,
+						"headerPrefix": "Bearer "
+					}
+				},
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "TestAuthOptumSandbox",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"authUrl": "https://sandbox.authz.flex.optum.com/oauth/authorize",
+						"client_authentication": "header",
+						"clientId": "55796a71-8104-4625-b259-bb91e9f13a60",
+						"state": "0124",
+						"code_verifier": "6b890b254542c9de4603278153e1b127d21730d46ac2620e6e35514c",
+						"scope": "patient/Patient.read",
+						"redirect_uri": "https://sites.google.com/sengsational.com/privacy/privacypolicy",
+						"tokenName": "BasicTest",
+						"clientSecret": "",
+						"accessTokenUrl": "",
+						"tokenRequestParams": [],
+						"authRequestParams": [],
+						"addTokenTo": "header",
+						"tokenType": "",
+						"challengeAlgorithm": "S256",
+						"grant_type": "authorization_code_with_pkce",
+						"useBrowser": false,
+						"headerPrefix": "Bearer "
+					}
+				},
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+  "args": {
+    "client_id": "55796a71-8104-4625-b259-bb91e9f13a60", 
+    "code_challenge": "EKhdok_1ZKtBrevixgZqXxEHxn5pQjKkFA4bTVOmyH4", 
+    "code_challenge_method": "S256", 
+    "redirect_uri": "https://sites.google.com/sengsational.com/privacy/privacypolicy", 
+    "response_type": "code", 
+    "scope": "patient/Patient.read", 
+    "state": "0124"
+  }, 
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", 
+    "Accept-Encoding": "gzip, deflate, br", 
+    "Accept-Language": "en-US", 
+    "Host": "www.httpbin.org", 
+    "Sec-Fetch-Dest": "document", 
+    "Sec-Fetch-Mode": "navigate", 
+    "Sec-Fetch-Site": "none", 
+    "Sec-Fetch-User": "?1", 
+    "Upgrade-Insecure-Requests": "1", 
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) PostmanCanary/11.2.14-canary240621-0734 Electron/20.3.11 Safari/537.36", 
+    "X-Amzn-Trace-Id": "Root=1-66d741d2-5945b5920d4823ec6b516ad0"
+  }, 
+  "origin": "136.57.84.155", 
+  "url": "https://www.httpbin.org/get?response_type=code&client_id=55796a71-8104-4625-b259-bb91e9f13a60&state=0124&scope=patient%2FPatient.read&redirect_uri=https%3A%2F%2Fsites.google.com%2Fsengsational.com%2Fprivacy%2Fprivacypolicy&code_challenge=EKhdok_1ZKtBrevixgZqXxEHxn5pQjKkFA4bTVOmyH4&code_challenge_method=S256"
+}

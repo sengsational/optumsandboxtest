@@ -75,6 +75,7 @@ public class FirstGetOptum {
 	
 
 	public static void main(String[] args) throws Exception {
+		@SuppressWarnings("unused")
 		FirstGetOptum fgo = new FirstGetOptum(); // for static initializers
 		
 		// Use this boolean to run the test or the actual call
@@ -98,9 +99,7 @@ public class FirstGetOptum {
 			urlBuilder.setQueryParameter("code_challenge_method", "S256");
 		}
 
-		// It's not supposed to make a difference, but this bit rearranges to match the order that Postman has it
 		String url = urlBuilder.build().toString();
-		url = url.replaceAll("&code_challenge_method=S256", "") + "&code_challenge_method=S256";
 		
 	    System.out.println("Constructed the URL: [" + url + "]");
 
@@ -119,8 +118,8 @@ public class FirstGetOptum {
 	    Request request = requestBuilder.build();
 	    
 	    OkHttpClient.Builder okHttpBuilder = new OkHttpClient.Builder();
-	    // There seems to be no difference if requestBuilder.addHeader() is used or if the HeaderInterceptor is used.  I left this here in case it's needed later.
-	    okHttpBuilder.addInterceptor(fgo.new HeaderInterceptor("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) PostmanCanary/11.2.14-canary240621-0734 Electron/20.3.11 Safari/537.36"));
+	    okHttpBuilder.followRedirects(false); // Essential or server error occurs [ https://stackoverflow.com/a/78955987/897007 ]
+
 		OkHttpClient client = okHttpBuilder.build();
 
 	    Call call = client.newCall(request);
